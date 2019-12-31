@@ -1,11 +1,16 @@
 window.onload = () => {
     init()
+    button = document.getElementById("solution")
+    button.addEventListener("click",()=>{
+        solution(final_path_taken)
+    })
 }
 
 var interval = {}
 var visited = []
 var final_state = 0
 var final_path_taken = null
+var button
 
 function init() {
     let startingState = '01102112233224422442'
